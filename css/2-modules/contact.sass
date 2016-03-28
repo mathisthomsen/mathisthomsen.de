@@ -1,0 +1,48 @@
+.load
+    +position(absolute, 0px 0 0 100vw)
+    +size(100vw 100vh)
+    +display(flex)
+    +align-items(center)
+    +justify-content(center)
+
+    .contact-wrap
+        background:
+            color: $mute-trans-light
+        text-align: center
+        color: $white
+        width: rem(400)
+        height: rem(175)
+        position: relative
+        padding: 1rem 0
+
+        .back
+            +position(absolute, -0.7rem null null rem(-55))
+            font-size: 4rem
+            //border: 3px solid $white-trans
+            //border-radius: 50%
+            //+size(4rem)
+            color: $white-trans
+            cursor: pointer
+
+            &:hover
+                color: $blend-light
+
+        .mail
+            padding: 1rem 0 2rem 0
+            a
+                color: $white-trans
+                font-size: 1.8rem
+
+                &:hover
+                    color: $white
+
+        .social
+            margin: 0 auto
+            text-align: center
+            a
+                font-size: 1.5rem
+                padding: 0.3rem
+                position: static !important
+
+                &:hover
+                    color: $blend-heavy

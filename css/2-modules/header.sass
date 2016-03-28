@@ -1,0 +1,282 @@
+header
+    height: 100vh
+    width: 100vw
+    background:
+        image: url('../assets/img/background_beach.jpg'), linear-gradient($blend-medium-blue,$blend-medium)
+        size: cover, cover
+        position: center center, center center
+        repeat: no-repeat, no-repeat
+        //color: $blend-heavy
+        blend-mode: overlay
+    position: relative
+    overflow: hidden
+    +transition(background-image 0.6s ease-in-out)
+
+    //@media screen and (min-width: 900px)
+        &.active
+            background-image: url('../assets/img/background_beach.jpg'), linear-gradient($blend-light-blue,$blend-light)
+            +transition(0.6s ease-in-out)
+
+    .slider-wrap
+        width: 200%
+        +position(relative, 0 0 0 0vw)
+        +transition(.6s)
+
+        @media screen and (min-width: 900px)
+            +transition(.6s cubic-bezier(1, -0.26, 0, 1.32))
+
+        &.active
+            +position(relative, 0 0 0 -100vw)
+
+        .content-wrap
+            +display(flex)
+            +align-items(center)
+            +justify-content(center)
+            height: 100vh
+            color: $dark-mute
+            +clearfix()
+            text-align: center
+            width: 50%
+            left: 0
+
+            .icon-wrap
+                +display(flex)
+                +align-items(center)
+                +justify-content(center)
+
+                .about-icon
+                    +size(100px)
+                    +radial-gradient(rgba(0,0,0,0), $mute-trans)
+                    text-align: center
+                    line-height: 1
+                    font-size: 4rem
+                    margin: 0 2rem
+                    color: $white
+                    cursor: pointer
+                    +transition(height, width)
+                    +transition-delay(2s)
+                    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5)
+
+                    &:focus
+                        outline: none
+
+                    //&:last-child
+                        cursor: pointer
+                        +radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3))
+
+                        //@media screen and (min-width: 900px)
+                            &.active
+                                background:
+                                    color: $blend-medium
+                                    image: url('../assets/img/background_beach.jpg')
+                                    size: cover
+                                    position: center center
+                                    repeat: no-repeat
+                                    overflow: hidden
+                                    blend-mode: difference
+                                color: $white-trans
+                                +transition(background-image, 0.6s)
+
+                    @media screen and (min-width: 900px)
+                        &:hover
+                            background:
+                                color: $blend-light
+                                image: url('../assets/img/background_beach.jpg')
+                                size: cover
+                                position: center center
+                                repeat: no-repeat
+                                overflow: hidden
+                                blend-mode: difference
+                            color: $white-trans
+                            +transition(background-blend-mode, 0.6s, ease-in-out)
+
+                            &:last-child
+                                background:
+                                    color: $blend-medium
+                                    blend-mode: difference
+
+                    .icon
+                        +position(relative, 50% 50%)
+                        top: 50%
+                        +transform(translate(-50%, -50%))
+
+            .overlay-music, .overlay-web
+                +size(50% 100%)
+                +position(absolute, 0px 0 0 0px)
+                +display(flex)
+                +align-items(center)
+                +justify-content(center)
+                background-color: $blend-medium-blue
+                opacity: 0
+                pointer-events: none
+                +transition(.3s ease-in-out)
+
+                &.active
+                    opacity: 1
+                    pointer-events: auto
+
+                    .music-box
+                        +transform(translate(0px, 0px))
+
+                .music-box
+                    background-color: $mute
+                    padding: 2rem
+                    position: relative
+                    +transform(translate(0px, -75vh))
+                    +transition(.3s cubic-bezier(0.17, -0.59, 0.5, 1.78))
+                    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5)
+                    //filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.9))
+                    width: 335px
+                    //overflow: hidden
+
+                    @media screen and (max-width: 505px)
+                        margin: 0 1rem
+
+                    .back
+                        position: absolute
+                        top: -1.9rem
+                        right: -1.6rem
+                        font-size: 1.5rem
+                        cursor: pointer
+                        //filter: drop-shadow(10px 1px 10px $mute-trans-light)
+
+                        @media screen and (max-width: 640px)
+                            right: 0.5rem
+                            top: -2.5rem
+
+                    h3
+                        margin-bottom: 2rem
+
+                    .prev, .next
+                        position: absolute
+                        cursor: pointer
+                        color: $white-trans
+                        +transition()
+                        z-index: 5
+
+                        &:hover
+                            color: $white
+
+                        p
+                            font-size: 2rem
+                            line-height: 1
+
+                    .prev
+                        left: 0.7rem
+                        top: 50%
+
+                    .next
+                        right: 0.7rem
+                        top: 50%
+
+
+                    .about-slider
+                        width: 300%
+                        +clearfix
+                        position: relative
+                        left: 0px
+
+                        .slide
+                            width: 33.333333333%
+                            float: left
+                            display: none
+                            +transform(translate(-300px, 0px))
+                            +transition(all 5s $ease-in-out-back)
+                            //+transition()
+                            z-index: 8
+
+                            &.visible
+                                display: inline-block
+                                +transform(translate(0px, 0px))
+                                +transition(all 5s $ease-in-out-back)
+                                //@extend .animation-target
+
+                            .anchor
+                                color: $blend-heavy-blue
+                                font-size: 1.5rem
+                                position: relative
+                                top: 0px
+                                display: inline-block
+                                padding-bottom: 1rem
+                                +transition()
+
+                                &:hover
+                                    top: 5px
+                                    +transition()
+
+                    p
+                        text-transform: lowercase
+                        font-size: 1.2rem
+                        line-height: 1.8em
+
+                        .icon
+                            color: $blend-medium
+
+
+@media screen and (max-width: 700px)
+    header
+
+        .slider-wrap
+
+            .content-wrap
+
+                .icon-wrap
+                    padding-top: 0.8rem
+
+                    .about-icon
+                        margin: 0 1rem
+
+@media screen and (max-width: 621px)
+    header
+
+        .slider-wrap
+
+            .content-wrap
+                +flex-wrap(wrap)
+                +align-content(center)
+
+            .load
+
+                .contact-wrap
+                    width: auto
+                    padding: 0 0.5rem
+
+                    .back
+                        +position(absolute, -0.5rem null null rem(-45))
+
+
+@media screen and (max-width: 489px)
+
+    header
+
+        .slider-wrap
+
+            .content-wrap
+
+                .icon-wrap
+
+                    .about-icon
+                        +size(75px)
+                        font-size: 3rem
+
+            .load
+
+                .contact-wrap
+                    width: auto
+                    padding: 0 0.5rem
+
+                    .back
+                        +position(absolute, -4.5rem null null 0px)
+
+@media screen and (max-width: 350px)
+    header
+
+        .slider-wrap
+
+            .content-wrap
+
+                .icon-wrap
+
+                    .about-icon
+                        +size(50px)
+                        font-size: 2rem
