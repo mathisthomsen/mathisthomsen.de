@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>LinkedIn Banner — Mathis Thomsen</title>
+  <style>
+    @font-face {
+      font-family: 'Space Grotesk';
+      src: url('./fonts/SpaceGrotesk-Variable.woff2') format('woff2');
+      font-weight: 100 900;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+    }
+
+    /* ── Banner canvas ── */
+    .banner {
+      width: 1584px;
+      height: 396px;
+      background-color: #080808;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      padding: 48px 64px;
+      flex-shrink: 0;
+    }
+
+    /* Subtle scanline texture */
+    .banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(255, 255, 255, 0.015) 2px,
+        rgba(255, 255, 255, 0.015) 4px
+      );
+      pointer-events: none;
+    }
+
+    /* Vertical rule on left */
+    .banner::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, transparent, #c8b99a 30%, #c8b99a 70%, transparent);
+    }
+
+    /* ── Content ── */
+    .content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+    }
+
+    .label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #c8b99a;
+      margin-bottom: 20px;
+    }
+
+    .name {
+      font-size: 72px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      color: #f0ede8;
+      margin-bottom: 16px;
+    }
+
+    .role {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: #9a9590;
+      margin-bottom: 32px;
+    }
+
+    .meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #5a5650;
+    }
+
+    .meta-sep { color: #c8b99a; }
+
+    /* ── Decorative element top-right ── */
+    .deco {
+      position: absolute;
+      top: 48px;
+      right: 64px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+
+    .deco-line {
+      height: 1px;
+      background: #c8b99a;
+      opacity: 0.3;
+    }
+
+    .tagline {
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      color: #5a5650;
+      text-align: right;
+      max-width: 380px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+
+    <!-- Top-right: tagline + decorative lines -->
+    <div class="deco">
+      <div class="deco-line" style="width: 280px;"></div>
+      <p class="tagline">UX/UI from first principle<br>to final pixel.</p>
+      <div class="deco-line" style="width: 140px;"></div>
+    </div>
+
+    <!-- Bottom-left: main content -->
+    <div class="content">
+      <p class="label">Senior UX/UI Designer</p>
+      <h1 class="name">Mathis Thomsen</h1>
+      <p class="role">UX Research · Information Architecture · Interaction Design</p>
+      <div class="meta">
+        <span>Bonn, DE</span>
+        <span class="meta-sep">·</span>
+        <span>mathisthomsen.de</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!--
+    HOW TO EXPORT:
+    1. Open this file in Chrome or Firefox
+    2. Zoom to exactly 100% (Cmd/Ctrl + 0)
+    3. Open DevTools → Toggle device toolbar (Cmd+Shift+M)
+    4. Set viewport to 1584 × 396
+    5. Right-click the banner div → "Capture screenshot" (Chrome)
+       OR use a screen capture tool at 1:1 pixels
+    6. Upload to LinkedIn: Profile → Edit → Background photo
+  -->
+
+</body>
+</html>
