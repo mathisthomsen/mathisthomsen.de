@@ -1,4 +1,4 @@
-name: Deploy to Ionos
+name: Deploy to FTP Server
 
 on:
   push:
@@ -13,25 +13,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Deploy via SFTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          port: 21
-          security: loose
-          local-dir: ./
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/.claude/**
-            **/node_modules/**
-            server/**
-            package.json
-            package-lock.json
-            README.md
-            CV_Thomsen_engl_page1.jpg
-            CV_Thomsen_engl_page2.jpg
+      - name: Install lftp
+        run: sudo apt-get install -y lftp
+
+      - name: Deploy via FTP
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_SERVER_DIR: ${{ secrets.FTP_SERVER_DIR }}
+        run: |
+          LFTP_CMDS="set ftp:ssl-allow no; set ftp:use-epsv false; set ftp:passive-mode yes; mirror --reverse --delete --parallel=4 --verbose --exclude-glob .git/ --exclude-glob .github/ --exclude-glob .claude/ --exclude-glob node_modules/ --exclude-glob server/ --exclude README.md --exclude package.json --exclude package-lock.json --exclude CV_Thomsen_engl_page1.jpg --exclude CV_Thomsen_engl_page2.jpg ./ $FTP_SERVER_DIR; bye"
+          lftp -u "$FTP_USERNAME","$FTP_PASSWORD" -e "$LFTP_CMDS" "$FTP_SERVER"
