@@ -156,7 +156,7 @@ On every push to `main`, the workflow in `.github/workflows/deploy.yml` deploys 
 
 | Secret | Value |
 |--------|-------|
-| `FTP_SERVER` | Ionos SFTP hostname (e.g. `home12345678.1and1-data.host`) |
+| `FTP_SERVER` | FTP server IP address or hostname |
 | `FTP_USERNAME` | FTP/SFTP username from Ionos control panel |
 | `FTP_PASSWORD` | FTP/SFTP password |
 | `FTP_SERVER_DIR` | Remote root directory (typically `/` or `/htdocs/`) |
