@@ -13,7 +13,7 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      background: #111;
+      background: #040404;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -21,118 +21,165 @@
       font-family: 'Space Grotesk', system-ui, sans-serif;
     }
 
-    /* ── Banner canvas ── */
+    /* ── Banner canvas: 1584 × 396 px ── */
     .banner {
       width: 1584px;
       height: 396px;
       background-color: #080808;
       position: relative;
       overflow: hidden;
-      display: flex;
-      align-items: flex-end;
-      padding: 48px 64px;
       flex-shrink: 0;
     }
 
-    /* Subtle scanline texture */
+    /* ── Scanlines — heavier than site for atmospheric depth ── */
     .banner::before {
       content: '';
       position: absolute;
       inset: 0;
+      z-index: 20;
       background-image: repeating-linear-gradient(
         0deg,
-        transparent,
-        transparent 2px,
-        rgba(255, 255, 255, 0.015) 2px,
-        rgba(255, 255, 255, 0.015) 4px
+        transparent 0px,
+        transparent 1px,
+        rgba(255, 255, 255, 0.025) 1px,
+        rgba(255, 255, 255, 0.025) 2px
       );
       pointer-events: none;
     }
 
-    /* Vertical rule on left */
-    .banner::after {
-      content: '';
+    /* ── Background: dot grid ── */
+    .layer-grid {
       position: absolute;
-      left: 0;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(200, 185, 154, 0.10) 1px, transparent 1px);
+      background-size: 28px 28px;
+      background-position: 14px 14px;
+    }
+
+    /* ── Left darkness — profile picture territory (left ~300px) ── */
+    .layer-veil {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        90deg,
+        #080808 0%,
+        #080808 18%,
+        rgba(8, 8, 8, 0.96) 28%,
+        rgba(8, 8, 8, 0.5) 42%,
+        rgba(8, 8, 8, 0.1) 60%,
+        transparent 72%
+      );
+    }
+
+    /* ── Atmospheric warm glow from far right ── */
+    .layer-glow {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(
+        ellipse at 108% 30%,
+        rgba(200, 185, 154, 0.08) 0%,
+        rgba(200, 185, 154, 0.03) 30%,
+        transparent 55%
+      );
+    }
+
+    /* ── Decorative: right edge vertical rule ── */
+    .line-v {
+      position: absolute;
+      right: 0;
       top: 0;
       bottom: 0;
-      width: 2px;
-      background: linear-gradient(to bottom, transparent, #c8b99a 30%, #c8b99a 70%, transparent);
+      width: 1px;
+      background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(200, 185, 154, 0.45) 25%,
+        rgba(200, 185, 154, 0.45) 75%,
+        transparent
+      );
+      z-index: 5;
     }
 
-    /* ── Content ── */
+    /* ── Decorative: horizontal accent rule above content ── */
+    .line-h {
+      position: absolute;
+      right: 64px;
+      left: 520px;
+      bottom: 178px;
+      height: 1px;
+      background: linear-gradient(
+        to left,
+        rgba(200, 185, 154, 0.55),
+        rgba(200, 185, 154, 0.12) 60%,
+        transparent
+      );
+      z-index: 5;
+    }
+
+    /* ── Decorative: corner bracket top-right ── */
+    .bracket-tr {
+      position: absolute;
+      top: 44px;
+      right: 64px;
+      width: 20px;
+      height: 20px;
+      border-top: 1px solid rgba(200, 185, 154, 0.38);
+      border-right: 1px solid rgba(200, 185, 154, 0.38);
+      z-index: 5;
+    }
+
+    /* ── Decorative: corner bracket bottom-right ── */
+    .bracket-br {
+      position: absolute;
+      bottom: 44px;
+      right: 64px;
+      width: 20px;
+      height: 20px;
+      border-bottom: 1px solid rgba(200, 185, 154, 0.38);
+      border-right: 1px solid rgba(200, 185, 154, 0.38);
+      z-index: 5;
+    }
+
+    /* ── Content: right-anchored, clear of profile picture ── */
     .content {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      width: 100%;
+      position: absolute;
+      right: 80px;
+      bottom: 56px;
+      text-align: right;
+      z-index: 10;
     }
 
+    /* Role label above name */
     .label {
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 500;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.24em;
       text-transform: uppercase;
       color: #c8b99a;
-      margin-bottom: 20px;
-    }
-
-    .name {
-      font-size: 72px;
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 1;
-      color: #f0ede8;
       margin-bottom: 16px;
     }
 
-    .role {
-      font-size: 20px;
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      color: #9a9590;
-      margin-bottom: 32px;
+    /* Name — large, tight, the only real focal point */
+    .name {
+      font-size: 90px;
+      font-weight: 700;
+      letter-spacing: -0.035em;
+      line-height: 0.95;
+      color: #f0ede8;
+      text-shadow: 0 0 60px rgba(200, 185, 154, 0.10);
     }
 
-    .meta {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 13px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #5a5650;
-    }
-
-    .meta-sep { color: #c8b99a; }
-
-    /* ── Decorative element top-right ── */
-    .deco {
+    /* URL — barely there, bottom-right corner */
+    .url {
       position: absolute;
-      top: 48px;
-      right: 64px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 8px;
-    }
-
-    .deco-line {
-      height: 1px;
-      background: #c8b99a;
-      opacity: 0.3;
-    }
-
-    .tagline {
-      font-size: 16px;
-      font-weight: 400;
-      letter-spacing: -0.01em;
-      color: #5a5650;
-      text-align: right;
-      max-width: 380px;
-      line-height: 1.5;
+      bottom: 44px;
+      right: 80px;
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #282320;
+      z-index: 10;
+      font-family: monospace;
     }
   </style>
 </head>
@@ -140,36 +187,38 @@
 
   <div class="banner">
 
-    <!-- Top-right: tagline + decorative lines -->
-    <div class="deco">
-      <div class="deco-line" style="width: 280px;"></div>
-      <p class="tagline">UX/UI from first principle<br>to final pixel.</p>
-      <div class="deco-line" style="width: 140px;"></div>
-    </div>
+    <!-- Background layers -->
+    <div class="layer-grid"></div>
+    <div class="layer-veil"></div>
+    <div class="layer-glow"></div>
 
-    <!-- Bottom-left: main content -->
+    <!-- Decorative -->
+    <div class="bracket-tr"></div>
+    <div class="bracket-br"></div>
+    <div class="line-v"></div>
+    <div class="line-h"></div>
+
+    <!-- Content — right side only -->
     <div class="content">
       <p class="label">Senior UX/UI Designer</p>
       <h1 class="name">Mathis Thomsen</h1>
-      <p class="role">UX Research · Information Architecture · Interaction Design</p>
-      <div class="meta">
-        <span>Bonn, DE</span>
-        <span class="meta-sep">·</span>
-        <span>mathisthomsen.de</span>
-      </div>
     </div>
+
+    <!-- Barely visible URL -->
+    <p class="url">mathisthomsen.de</p>
 
   </div>
 
   <!--
     HOW TO EXPORT:
-    1. Open this file in Chrome or Firefox
-    2. Zoom to exactly 100% (Cmd/Ctrl + 0)
-    3. Open DevTools → Toggle device toolbar (Cmd+Shift+M)
-    4. Set viewport to 1584 × 396
-    5. Right-click the banner div → "Capture screenshot" (Chrome)
-       OR use a screen capture tool at 1:1 pixels
-    6. Upload to LinkedIn: Profile → Edit → Background photo
+    1. Open this file in Chrome
+    2. DevTools (F12) → Toggle device toolbar (Cmd+Shift+M)
+    3. Set viewport to exactly 1584 × 396
+    4. In Elements panel, right-click <div class="banner"> → "Capture node screenshot"
+    5. Upload to LinkedIn: Profile → Edit → Background photo
+
+    LinkedIn covers the bottom-left with your profile picture (~220px radius circle).
+    All content sits on the right — safe from any cropping.
   -->
 
 </body>
