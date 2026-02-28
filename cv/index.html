@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV — Mathis Thomsen, Senior UX/UI Designer. Bonn, Deutschland.">
+  <meta name="robots" content="index, follow">
+
+  <title>CV — Mathis Thomsen</title>
+
+  <!-- Preload critical font -->
+  <link rel="preload" href="/assets/fonts/SpaceGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/cv.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+  <!-- Sticky top bar: back link + language toggle -->
+  <div class="cv-topbar" role="navigation" aria-label="Seiten-Navigation">
+    <a href="/" class="cv-topbar__back">
+      <span aria-hidden="true">←</span>
+      <span>Mathis Thomsen</span>
+    </a>
+
+    <div class="cv-lang-toggle" role="group" aria-label="Sprache wählen">
+      <button
+        class="cv-lang-toggle__btn"
+        data-lang="de"
+        aria-label="Auf Deutsch wechseln"
+        aria-pressed="true"
+      >DE</button>
+      <span class="cv-lang-toggle__sep" aria-hidden="true">|</span>
+      <button
+        class="cv-lang-toggle__btn"
+        data-lang="en"
+        aria-label="Switch to English"
+        aria-pressed="false"
+      >EN</button>
+    </div>
+
+    <a href="/export/cv.pdf" class="cv-topbar__download" aria-label="CV als PDF herunterladen">
+      <span aria-hidden="true">↓</span>
+      <span class="cv-topbar__download-label">PDF</span>
+    </a>
+  </div>
+
+  <!-- CV content — rendered by cv.js -->
+  <main id="main" class="cv-main">
+
+    <!-- ── Header ──────────────────────────────────── -->
+    <header class="cv-header" id="cv-header">
+      <!-- Populated by cv.js -->
+      <div class="cv-header__inner container">
+        <div class="cv-header__photo-wrap" id="cv-photo-wrap">
+          <img
+            class="cv-header__photo"
+            src="/assets/photo.jpg"
+            alt="Mathis Thomsen"
+            width="120"
+            height="120"
+            onerror="this.parentNode.innerHTML='<div class=&quot;cv-header__photo-placeholder&quot; aria-hidden=&quot;true&quot;>MT</div>'"
+          >
+        </div>
+        <div class="cv-header__copy">
+          <h1 class="cv-header__name" id="cv-name">Mathis Thomsen</h1>
+          <p class="cv-header__title" id="cv-title">Senior UX/UI Designer</p>
+          <ul class="cv-header__contact" id="cv-contact" aria-label="Kontakt">
+            <!-- Populated by cv.js -->
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="cv-body container">
+
+      <!-- ── Summary ─────────────────────────────────── -->
+      <section
+        class="cv-section"
+        aria-labelledby="cv-section-summary"
+        data-reveal
+      >
+        <h2 class="cv-section__title" id="cv-section-summary" data-i18n="section.about">
+          Über mich
+        </h2>
+        <div class="cv-section__content">
+          <p class="cv-summary" id="cv-summary"></p>
+        </div>
+      </section>
+
+      <!-- ── Experience ──────────────────────────────── -->
+      <section
+        class="cv-section"
+        aria-labelledby="cv-section-experience"
+        data-reveal
+      >
+        <h2 class="cv-section__title" id="cv-section-experience" data-i18n="section.experience">
+          Berufserfahrung
+        </h2>
+        <div class="cv-section__content">
+          <div class="cv-timeline" id="cv-experience">
+            <!-- Populated by cv.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Education ───────────────────────────────── -->
+      <section
+        class="cv-section"
+        aria-labelledby="cv-section-education"
+        data-reveal
+      >
+        <h2 class="cv-section__title" id="cv-section-education" data-i18n="section.education">
+          Ausbildung
+        </h2>
+        <div class="cv-section__content">
+          <div class="cv-timeline" id="cv-education">
+            <!-- Populated by cv.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Skills + Languages (two-col on desktop) ── -->
+      <div class="cv-two-col" data-reveal>
+
+        <section
+          class="cv-section"
+          aria-labelledby="cv-section-skills"
+        >
+          <h2 class="cv-section__title" id="cv-section-skills" data-i18n="section.skills">
+            Kenntnisse
+          </h2>
+          <div class="cv-section__content">
+            <div class="cv-skills" id="cv-skills">
+              <!-- Populated by cv.js -->
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="cv-section"
+          aria-labelledby="cv-section-languages"
+        >
+          <h2 class="cv-section__title" id="cv-section-languages" data-i18n="section.languages">
+            Sprachen
+          </h2>
+          <div class="cv-section__content">
+            <div class="cv-languages" id="cv-languages">
+              <!-- Populated by cv.js -->
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- ── Certifications ──────────────────────────── -->
+      <section
+        class="cv-section"
+        aria-labelledby="cv-section-certs"
+        data-reveal
+      >
+        <h2 class="cv-section__title" id="cv-section-certs" data-i18n="section.certifications">
+          Weiterbildung &amp; Qualifikationen
+        </h2>
+        <div class="cv-section__content">
+          <ul class="cv-certs" id="cv-certs">
+            <!-- Populated by cv.js -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- ── Projects ────────────────────────────────── -->
+      <section
+        class="cv-section"
+        aria-labelledby="cv-section-projects"
+        data-reveal
+      >
+        <h2 class="cv-section__title" id="cv-section-projects" data-i18n="section.projects">
+          Projekte
+        </h2>
+        <div class="cv-section__content">
+          <div class="cv-projects" id="cv-projects">
+            <!-- Populated by cv.js -->
+          </div>
+        </div>
+      </section>
+
+    </div><!-- .cv-body -->
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Mathis Thomsen</span>
+    <span class="site-footer__sep">·</span>
+    <a href="/impressum.html">Impressum</a>
+    <span class="site-footer__sep">·</span>
+    <a href="/datenschutz.html">Datenschutz</a>
+  </footer>
+
+  <script src="/js/cv.js" type="module"></script>
+  <script src="/js/animations.js" type="module"></script>
+</body>
+</html>

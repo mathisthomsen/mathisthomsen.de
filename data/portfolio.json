@@ -1,0 +1,293 @@
+{
+  "projects": [
+    {
+      "slug": "b2b-platform-ia",
+      "title": {
+        "de": "Informationsarchitektur für eine kollaborative B2B-Plattform",
+        "en": "Information Architecture for a Collaborative B2B Platform"
+      },
+      "year": "2023",
+      "duration": { "de": "3 Monate", "en": "3 months" },
+      "role": {
+        "de": "UX Research · Information Architecture · Facilitation",
+        "en": "UX Research · Information Architecture · Facilitation"
+      },
+      "client": {
+        "de": "B2B-Plattform (vertraulich)",
+        "en": "B2B Platform (confidential)"
+      },
+      "tags": ["UX Research", "Information Architecture", "Facilitation"],
+      "confidential": true,
+      "teaser": {
+        "de": "Strukturierung einer komplexen Produktwelt für eine genossenschaftlich organisierte B2B-Plattform – mit 6 Workshops, 20+ Teilnehmern aus 12 Unternehmen und einem abschließenden Treetest.",
+        "en": "Structuring a complex product world for a cooperatively organised B2B platform – with 6 workshops, 20+ participants from 12 companies and a concluding tree test."
+      },
+      "sections": [
+        {
+          "type": "stat_bar",
+          "stats": [
+            { "value": "6",   "label": { "de": "Workshops",          "en": "Workshops" } },
+            { "value": "20+", "label": { "de": "Teilnehmer",         "en": "Participants" } },
+            { "value": "12",  "label": { "de": "Partnerunternehmen", "en": "Partner Companies" } },
+            { "value": "20",  "label": { "de": "Treetest-Probanden", "en": "Tree Test Participants" } }
+          ]
+        },
+        {
+          "type": "text",
+          "content": {
+            "de": "Eine abonnierbare Plattform für Distributoren und ihre Herstellerpartner – genossenschaftlich organisiert, mit vielen gleichberechtigten Stimmen. Die Herausforderung bestand nicht nur darin, eine komplexe Produktwelt auf Makro- und Mikroebene zu strukturieren, sondern dabei Stakeholder mit teils gegensätzlichen Vorstellungen zu einem gemeinsamen Ergebnis zu führen.",
+            "en": "A subscription platform for distributors and their manufacturer partners – cooperatively organised, with many equal voices. The challenge was not only to structure a complex product world at macro and micro level, but to guide stakeholders with partly opposing visions towards a shared outcome."
+          }
+        },
+        {
+          "type": "timeline",
+          "phases": [
+            {
+              "phase": "01",
+              "title": { "de": "Vorbereitung", "en": "Preparation" },
+              "description": { "de": "Problemraum verstehen, Stakeholder-Mapping, Workshop-Design", "en": "Understanding the problem space, stakeholder mapping, workshop design" }
+            },
+            {
+              "phase": "02",
+              "title": { "de": "Buchdeckel-Workshops", "en": "Book Cover Workshops" },
+              "description": { "de": "6 Sessions mit über 20 Teilnehmern aus einem Dutzend Unternehmen. Produktwelt auf Makro- und Mikroebene clustern, Informationen hierarchisch priorisieren.", "en": "6 sessions with over 20 participants from a dozen companies. Clustering the product world at macro and micro level, prioritising information hierarchically." }
+            },
+            {
+              "phase": "03",
+              "title": { "de": "Synthese", "en": "Synthesis" },
+              "description": { "de": "Workshopergebnisse konsolidieren, Informationsarchitektur, Navigationsstruktur und Seitenstruktur ableiten.", "en": "Consolidating workshop results, deriving information architecture, navigation structure and page structure." }
+            },
+            {
+              "phase": "04",
+              "title": { "de": "Treetest", "en": "Tree Test" },
+              "description": { "de": "Gemeinsam mit Stakeholdern Szenarien und Aufgaben entwickeln. 20 Probanden testen die Struktur auf Findbarkeit und Nachvollziehbarkeit.", "en": "Developing scenarios and tasks together with stakeholders. 20 participants testing the structure for findability and comprehensibility." }
+            },
+            {
+              "phase": "05",
+              "title": { "de": "Validierung & Übergabe", "en": "Validation & Handover" },
+              "description": { "de": "Ergebnisse auswerten, Implikationen auf die Architektur ableiten, Stakeholdern präsentieren, Struktur finalisieren.", "en": "Evaluating results, deriving implications for the architecture, presenting to stakeholders, finalising structure." }
+            }
+          ]
+        },
+        {
+          "type": "method_grid",
+          "methods": [
+            {
+              "icon": "cards",
+              "title": { "de": "Card Sorting", "en": "Card Sorting" },
+              "description": { "de": "Inhalte und Produkte durch die Augen der Nutzer gruppieren – ohne vorgegebene Kategorien.", "en": "Grouping content and products through the eyes of users – without predefined categories." }
+            },
+            {
+              "icon": "layers",
+              "title": { "de": "Buchdeckel-Methode", "en": "Book Cover Method" },
+              "description": { "de": "Buchrücken = Eyecatcher. Titelblatt = unverzichtbare Essenz. Rückseite = Überblick. Prioritäten greifbar machen, ohne abstrakt zu bleiben.", "en": "Spine = eye-catcher. Cover = indispensable essence. Back cover = overview. Making priorities tangible without remaining abstract." }
+            },
+            {
+              "icon": "tree",
+              "title": { "de": "Treetest", "en": "Tree Test" },
+              "description": { "de": "Die fertige Struktur auf mentale Modelle testen – findest du, was du suchst, und wo erwartest du es?", "en": "Testing the finished structure against mental models – can you find what you are looking for, and where do you expect it?" }
+            },
+            {
+              "icon": "network",
+              "title": { "de": "Stakeholder Facilitation", "en": "Stakeholder Facilitation" },
+              "description": { "de": "Divergente Perspektiven aus einem Dutzend Unternehmen in einen gemeinsamen Prozess führen – und am Ende zu einem Ergebnis, das alle tragen.", "en": "Guiding divergent perspectives from a dozen companies into a shared process – and ultimately to an outcome that everyone can stand behind." }
+            }
+          ]
+        },
+        {
+          "type": "insight",
+          "content": {
+            "de": "„Der Treetest offenbarte mentale Modelle, die kein Stakeholder antizipiert hatte – und machte Anpassungen notwendig, die die Struktur am Ende deutlich robuster machten.\"",
+            "en": "\"The tree test revealed mental models that no stakeholder had anticipated – and necessitated adjustments that ultimately made the structure significantly more robust.\""
+          }
+        },
+        {
+          "type": "challenge_approach_outcome",
+          "outcome": {
+            "de": "Eine Informationsarchitektur, Navigationsstruktur und Seitenstruktur, die Stakeholder und Nutzer gleichermaßen überzeugten. Und ein Prozess, in dem alle Beteiligten das Gefühl hatten, gehört worden zu sein – was in einem genossenschaftlichen Kontext keine Selbstverständlichkeit ist.",
+            "en": "An information architecture, navigation structure and page structure that convinced stakeholders and users alike. And a process in which all participants felt heard – which is by no means a given in a cooperative context."
+          }
+        }
+      ],
+      "assets": []
+    }
+  ,
+    {
+      "slug": "evidoxa",
+      "title": {
+        "de": "Evidoxa — Forschungsdatenmanagement für Geisteswissenschaftler:innen",
+        "en": "Evidoxa — Research Data Management for Humanities Scholars"
+      },
+      "year": "2024",
+      "duration": { "de": "Laufend", "en": "Ongoing" },
+      "role": {
+        "de": "Product Design · UX/UI · AI-aided Development · Prototyping",
+        "en": "Product Design · UX/UI · AI-aided Development · Prototyping"
+      },
+      "client": { "de": "Eigenprojekt", "en": "Personal Project" },
+      "tags": ["Product Design", "UX/UI", "AI-aided Development", "Prototyping"],
+      "wip": true,
+      "teaser": {
+        "de": "Forschungsdatenmanagement für Geisteswissenschaftler:innen – ein Tool für Historiker:innen, das komplexe Netzwerke aus Personen, Orten, Quellen und Ereignissen strukturiert, ohne technisches Vorwissen vorauszusetzen.",
+        "en": "Research data management for humanities scholars — a tool for historians that structures complex networks of people, places, sources and events without requiring technical expertise."
+      },
+      "sections": [
+        {
+          "type": "stat_bar",
+          "stats": [
+            { "value": "1",             "label": { "de": "Produktidee",          "en": "Product Idea" } },
+            { "value": "∞",             "label": { "de": "Datenbankiterationen", "en": "Database Iterations" } },
+            { "value": "Next.js + MUI", "label": { "de": "Stack",               "en": "Stack" } },
+            { "value": "POC",           "label": { "de": "Phase",               "en": "Phase" } }
+          ]
+        },
+        {
+          "type": "text",
+          "content": {
+            "de": "Historiker:innen arbeiten täglich mit komplexen Netzwerken aus Personen, Orten, Quellen und Ereignissen – aber kaum ein Tool ist für sie gemacht. Die existierenden Lösungen richten sich de facto an IT-Abteilungen: mächtig, aber mit steiler Lernkurve, spezialisiertem Vorwissen und einer Benutzeroberfläche, die Geisteswissenschaftler:innen eher abschreckt als einlädt. Viele kennen diese Tools nicht einmal.",
+            "en": "Historians work daily with complex networks of people, places, sources and events — but hardly any tool is built for them. Existing solutions are effectively designed for IT departments: powerful, but steep in learning curve, demanding in prerequisite knowledge, and built around interfaces that intimidate rather than invite. Many humanities scholars aren't even aware these tools exist."
+          }
+        },
+        {
+          "type": "insight",
+          "content": {
+            "de": "„Das Problem ist nicht, dass es keine Lösung gibt. Das Problem ist, dass die Lösungen an der Zielgruppe vorbeientwickelt wurden.\"",
+            "en": "\"The problem isn't that there's no solution. The problem is that the solutions were built past their intended audience.\""
+          }
+        },
+        {
+          "type": "timeline",
+          "phases": [
+            {
+              "phase": "01",
+              "title": { "de": "Problemerkennung", "en": "Problem Discovery" },
+              "description": {
+                "de": "Im Gespräch mit Historiker:innen kristallisierte sich ein wiederkehrendes Bedürfnis heraus: historische Daten, Orte, Personen, Quellen und Beziehungen strukturiert an einem Ort zusammenführen und auswerten – ohne technisches Vorwissen.",
+                "en": "Conversations with historians revealed a recurring need: a single place to bring together and meaningfully analyze historical data, locations, people, sources and relationships — without requiring technical expertise."
+              }
+            },
+            {
+              "phase": "02",
+              "title": { "de": "Vibe Coding als Designmethode", "en": "Vibe Coding as a Design Method" },
+              "description": {
+                "de": "Statt Wireframes kam Code. Mit Cursor AI, Next.js und MUI entstanden schnell nutzbare Interfaces – Prototyping nicht als Vorstufe zur Entwicklung, sondern als Designwerkzeug. Was funktioniert, bleibt. Was nicht überzeugt, fliegt raus.",
+                "en": "No wireframes, just code. Using Cursor AI, Next.js and MUI, usable interfaces emerged quickly — prototyping not as a precursor to development, but as a design tool in its own right. What works, stays. What doesn't, goes."
+              }
+            },
+            {
+              "phase": "03",
+              "title": { "de": "Datenbankarchitektur als UX-Problem", "en": "Database Architecture as a UX Problem" },
+              "description": {
+                "de": "Schnell wurde klar: Informationsarchitektur lässt sich nicht 1:1 in Datenbankstrukturen übersetzen. Eine intensive Lernreise in Datenbankmodellierung folgte – mit dem Ziel, eine Struktur zu schaffen, die maximale Flexibilität und Skalierbarkeit bietet, ohne diese Komplexität an die Nutzer:innen weiterzugeben. Das Datenbankmodell wurde mehrfach grundlegend umgebaut.",
+                "en": "It became clear early on that information architecture cannot be translated 1:1 into database structures. An intensive learning journey into data modeling followed — with the goal of building a structure that offers maximum flexibility and scalability without passing that complexity on to users. The data model was rebuilt from the ground up multiple times."
+              }
+            },
+            {
+              "phase": "04",
+              "title": { "de": "Scope-Erweiterung nach Feedback", "en": "Scope Expansion Through Feedback" },
+              "description": {
+                "de": "Historiker:innen forschen selten allein. Auf Basis von Nutzerfeedback kamen Projekte mit kollaborativer Bearbeitung hinzu sowie die Anbindung von Bibliographieplattformen zur Referenzierung von Sekundärliteratur.",
+                "en": "Historians rarely research alone. Based on user feedback, collaborative projects were added alongside integration with bibliography platforms for referencing secondary literature."
+              }
+            },
+            {
+              "phase": "05",
+              "title": { "de": "POC-Vorbereitung", "en": "POC Preparation" },
+              "description": {
+                "de": "Der nächste Schritt: eine breit angelegte Validierung mit einer größeren Gruppe von Wissenschaftler:innen – weniger klassischer Usability Test, mehr Proof of Concept im echten Forschungskontext.",
+                "en": "The next step: broader validation with a larger group of researchers — less a classic usability test, more a proof of concept in a real research context."
+              }
+            }
+          ]
+        },
+        {
+          "type": "method_grid",
+          "methods": [
+            {
+              "icon": "ai",
+              "title": { "de": "AI-aided Development", "en": "AI-aided Development" },
+              "description": {
+                "de": "Cursor AI als Denkpartner und Entwicklungswerkzeug – nicht zur Automatisierung, sondern zur Beschleunigung von Lernprozessen und Designentscheidungen.",
+                "en": "Cursor AI as a thinking partner and development tool — not for automation, but to accelerate learning processes and design decisions."
+              }
+            },
+            {
+              "icon": "database",
+              "title": { "de": "Datenbankmodellierung", "en": "Database Modeling" },
+              "description": {
+                "de": "Iteratives Umbauen der Datenbankstruktur als integraler Teil des UX-Prozesses – weil das Backend die Grenzen des Frontends definiert.",
+                "en": "Iteratively rebuilding the database structure as an integral part of the UX process — because the backend defines the limits of the frontend."
+              }
+            },
+            {
+              "icon": "code",
+              "title": { "de": "Code als Prototyp", "en": "Code as Prototype" },
+              "description": {
+                "de": "Kein Figma, kein Balsamiq – direkt in produktionsnahem Code prototypen, um echte Interaktion früh erfahrbar zu machen.",
+                "en": "No Figma, no Balsamiq — prototyping directly in production-ready code to make real interaction tangible from the start."
+              }
+            },
+            {
+              "icon": "research",
+              "title": { "de": "Nutzerzentrierte Scope-Entscheidungen", "en": "User-centered Scope Decisions" },
+              "description": {
+                "de": "Features nicht aus der Idee heraus, sondern aus dem Gespräch mit der Zielgruppe – und den Mut, den Scope zu erweitern wenn das Feedback es verlangt.",
+                "en": "Features driven not by ideas, but by conversations with the target audience — and the willingness to expand scope when feedback demands it."
+              }
+            }
+          ]
+        },
+        {
+          "type": "visual_slots",
+          "slots": [
+            { "id": "dashboard",      "caption": { "de": "Hauptoberfläche / Dashboard",             "en": "Main interface / Dashboard" } },
+            { "id": "data-structure", "caption": { "de": "Komplexe Datenstruktur, simpel dargestellt", "en": "Complex data structure, simply presented" } },
+            { "id": "collaboration",  "caption": { "de": "Kollaborations- oder Projektansicht",       "en": "Collaboration or project view" } },
+            { "id": "behind-scenes",  "caption": { "de": "Ausschnitt Cursor Rules — Behind the Scenes", "en": "Cursor Rules excerpt — Behind the Scenes" } }
+          ]
+        },
+        {
+          "type": "key_takeaways",
+          "takeaways": [
+            {
+              "title": { "de": "Prototyping mit Code", "en": "Prototyping with Code" },
+              "description": {
+                "de": "Der direkteste Weg vom Problem zur überprüfbaren Lösung – wenn man bereit ist, die Lernkurve in Kauf zu nehmen.",
+                "en": "The most direct path from problem to testable solution — if you're willing to embrace the learning curve."
+              }
+            },
+            {
+              "title": { "de": "Komplexität ist eine UX-Entscheidung", "en": "Complexity is a UX Decision" },
+              "description": {
+                "de": "Eine mächtige Datenstruktur im Hintergrund zwingt nicht zu einer komplexen Oberfläche im Vordergrund. Das eine zu entwerfen ohne das andere zu kennen, funktioniert nicht.",
+                "en": "A powerful data structure in the background doesn't demand a complex interface in the foreground. Designing one without understanding the other doesn't work."
+              }
+            },
+            {
+              "title": { "de": "Bedürfnis ≠ Lösung", "en": "Need ≠ Solution" },
+              "description": {
+                "de": "Ein technisch gedecktes Bedürfnis ist wertlos, wenn die Lösung an den mentalen Modellen und dem Alltag der Zielgruppe vorbeientwickelt wurde.",
+                "en": "A technically solved need is worthless if the solution was built past the mental models and daily reality of its users."
+              }
+            },
+            {
+              "title": { "de": "Modularität als Überlebensstrategie", "en": "Modularity as a Survival Strategy" },
+              "description": {
+                "de": "Scope ändert sich. Wer das von Anfang an einplant, überlebt die Änderungen. Wer es nicht tut, baut zweimal.",
+                "en": "Scope changes. Building for that from day one means surviving the changes. Not building for it means building twice."
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "content": {
+            "de": "Evidoxa befindet sich in aktiver Entwicklung. Der aktuelle Stand ist ein funktionsfähiger MVP mit Nutzerverwaltung, kollaborativen Projekten, flexiblem Datenmodell und Bibliographieanbindung. Der nächste Schritt ist die Validierung im echten Forschungskontext.",
+            "en": "Evidoxa is in active development. The current state is a functional MVP with user management, collaborative projects, a flexible data model and bibliography integration. The next step is validation in a real research context."
+          }
+        }
+      ],
+      "assets": []
+    }
+  ]
+}

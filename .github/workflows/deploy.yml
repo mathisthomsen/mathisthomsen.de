@@ -1,0 +1,36 @@
+name: Deploy to Ionos
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    name: Deploy static site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy via SFTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: sftp
+          port: 22
+          local-dir: ./
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.claude/**
+            **/node_modules/**
+            server/**
+            package.json
+            package-lock.json
+            README.md
+            CV_Thomsen_engl_page1.jpg
+            CV_Thomsen_engl_page2.jpg

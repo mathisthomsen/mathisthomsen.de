@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "name": "Mathis Thomsen",
+    "initials": "MT",
+    "title": { "de": "Senior UX/UI Designer", "en": "Senior UX/UI Designer" },
+    "email": "info@mathisthomsen.de",
+    "website": "mathisthomsen.de",
+    "photo": "/assets/photo.jpg"
+  },
+  "summary": {
+    "de": "Senior UX/UI Designer mit über einem Jahrzehnt Erfahrung an der Schnittstelle von Nutzerforschung, Interaktionsdesign und Frontend-Entwicklung. Bekannt dafür, komplexe Anforderungen in klare, barrierefreie digitale Produkte zu übersetzen — von der Design-System-Architektur bis zur Customer-Journey-Strategie.",
+    "en": "Senior UX/UI Designer with over a decade of experience bridging user research, interaction design, and front-end development. Known for translating complex requirements into clear, accessible digital products — from design system architecture to customer journey strategy."
+  },
+  "experience": [
+    {
+      "id": "sedo",
+      "company": "Sedo",
+      "companyUrl": "https://sedo.com",
+      "logo": "/assets/logos/sedo.svg",
+      "start": "2021-12",
+      "end": null,
+      "roles": [
+        {
+          "title": { "de": "Senior UX/UI Designer", "en": "Senior UX/UI Designer" },
+          "start": "2023-08",
+          "end": null
+        },
+        {
+          "title": { "de": "UX/UI Designer", "en": "UX/UI Designer" },
+          "start": "2021-12",
+          "end": "2023-08"
+        }
+      ],
+      "tags": ["UX", "UI", "Vue", "Atomic Design", "Hotjar", "Analytics"],
+      "description": {
+        "de": [
+          "Entwicklung einer modularen Pattern Library auf Basis von Atomic Design, ausgerichtet auf SPA-Technologie (Vue)",
+          "Erstellung von Customer Journey Maps zur Anforderungsanalyse mit Product Management und Executive Management",
+          "Analyse des Nutzerverhaltens mittels Hotjar, Surveys und weiteren Analytics-Tools",
+          "Vertretung der Nutzerperspektive gegenüber Product Management und Unternehmensleitung"
+        ],
+        "en": [
+          "Development of a modular pattern library based on Atomic Design, aligned for SPA technology (Vue)",
+          "Creation of customer journey maps to define user and business requirements with product management and executive management",
+          "Analysis of user behavior using Hotjar, surveys and other analytics software",
+          "Representing user needs to product management and executive management"
+        ]
+      }
+    },
+    {
+      "id": "vr-networld",
+      "company": "VR-NetWorld",
+      "companyUrl": null,
+      "logo": "/assets/logos/vr-networld.svg",
+      "start": "2013-10",
+      "end": "2021-11",
+      "roles": [
+        {
+          "title": { "de": "UX Designer", "en": "UX Designer" },
+          "start": "2020-01",
+          "end": "2021-11",
+          "description": {
+            "de": [
+              "Konzeption von Websites und Apps nach Prinzipien des Human Centered Design mit Schwerpunkt auf Responsivität, Performance und Barrierefreiheit",
+              "Entwicklung und Durchführung von Nutzertests sowie Ideation-Workshops",
+              "Business-Analyse und Anforderungsmanagement als Teil der Digitalisierungsstrategie",
+              "Steuerung externer Stakeholder, Agenturen und Entwicklungsteams"
+            ],
+            "en": [
+              "Conception of websites and apps according to human centered design principles with focus on responsiveness, performance and accessibility",
+              "Development and delivery of user tests and problem-solving workshops",
+              "Business analysis and requirements management as part of the digitization strategy",
+              "Management of stakeholders, agencies and development teams"
+            ]
+          }
+        },
+        {
+          "title": { "de": "UX Konzeption & technische Beratung", "en": "UX Conception & Technical Consulting" },
+          "start": "2017-11",
+          "end": "2019-12",
+          "description": {
+            "de": [
+              "Entwicklung digitaler und nutzerorientierter Umsetzungskonzepte",
+              "Bereitstellung technischer Strategien für Online-Projekte sowie kanalspezifische Kommunikationsmaßnahmen",
+              "Interner Berater für Umsetzungsfragen und Management externer Agenturen"
+            ],
+            "en": [
+              "Development of digital and user-oriented implementation concepts",
+              "Provision of technical strategies for online projects and channel-specific communication measures",
+              "Internal consultant for implementation issues and management of external agencies"
+            ]
+          }
+        },
+        {
+          "title": { "de": "Content Management", "en": "Content Management" },
+          "start": "2014-06",
+          "end": "2017-10",
+          "description": {
+            "de": [
+              "Zielgruppengerechte Informationsaufbereitung für News, Newsletter und Produkte",
+              "Redesign und Umsetzung des Firmenkundenbereichs im zentralen Portal vr.de",
+              "Technische Verantwortung für vr.de und Ansprechpartner für CMS-Themen"
+            ],
+            "en": [
+              "Target group-oriented content for news, newsletters and products",
+              "Redesign and implementation of the corporate customer section in the central portal vr.de",
+              "Technical responsibility for vr.de and contact person for CMS topics"
+            ]
+          }
+        },
+        {
+          "title": { "de": "Trainee Online-Redaktion / PR", "en": "Traineeship Online Editorial / PR" },
+          "start": "2013-10",
+          "end": "2014-05",
+          "description": {
+            "de": [
+              "Themenrecherche und redaktionelle Planung für ein Corporate-Kundenportal",
+              "Gestaltung und Prüfung der rechtlichen Konformität von Online-Formularen",
+              "Revision und Bearbeitung von Texten für einen Content-Marketing-Bereich der Website"
+            ],
+            "en": [
+              "Topic identification and editorial planning for a corporate customer news portal",
+              "Design and compliance of legal security of online forms",
+              "Revision and editing of texts for a content marketing section of the website"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "ma-bonn",
+      "degree": { "de": "MA Germanistik / Kulturanthropologie", "en": "MA German Studies / Cultural Anthropology" },
+      "institution": "Universität Bonn",
+      "grade": "1,9",
+      "start": "2010-10",
+      "end": "2013-10",
+      "focus": {
+        "de": "Schwerpunkt Intermedialität und Transkulturalität",
+        "en": "Focus on intermediality and transculturality"
+      }
+    },
+    {
+      "id": "ba-bonn",
+      "degree": { "de": "BA Germanistik", "en": "BA German Studies" },
+      "institution": "Universität Bonn",
+      "grade": "2,2",
+      "start": "2007-10",
+      "end": "2010-10",
+      "focus": {
+        "de": "Literaturwissenschaft, Kulturanthropologie & linguistische Kommunikation",
+        "en": "Literary studies, cultural anthropology & linguistic communication"
+      }
+    }
+  ],
+  "skills": {
+    "specialized": [
+      { "name": { "de": "User Experience", "en": "User Experience" }, "level": 5, "max": 5 },
+      { "name": { "de": "User Interface", "en": "User Interface" }, "level": 4, "max": 5 },
+      { "name": { "de": "Analyse & Konzept", "en": "Analysis & Concept" }, "level": 5, "max": 5 },
+      { "name": "HTML, CSS, JS", "level": 4, "max": 5 }
+    ],
+    "tools": [
+      { "name": "Figma", "level": 5, "max": 5 },
+      { "name": "CMS", "level": 5, "max": 5 },
+      { "name": "MS Office", "level": 4, "max": 5 }
+    ],
+    "misc": {
+      "de": ["Sketch", "Adobe CC", "Agile Projektmanagement", "Design Thinking", "Public Relations", "Hotjar"],
+      "en": ["Sketch", "Adobe CC", "Agile project management", "Design Thinking", "Public Relations", "Hotjar"]
+    }
+  },
+  "languages": [
+    {
+      "name": { "de": "Deutsch", "en": "German" },
+      "level": 5,
+      "max": 5,
+      "label": { "de": "Muttersprache", "en": "Native" }
+    },
+    {
+      "name": { "de": "Englisch", "en": "English" },
+      "level": 4,
+      "max": 5,
+      "label": { "de": "Verhandlungssicher", "en": "Proficient" }
+    }
+  ],
+  "certifications": [
+    {
+      "title": {
+        "de": "Kommunikation und Führung – Grundlagen der Kommunikationspsychologie für Führungskräfte",
+        "en": "Communication and Leadership – Basics of Communication Psychology for Managers"
+      },
+      "issuer": "Schulz von Thun Institut"
+    },
+    {
+      "title": {
+        "de": "UXQB® Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+        "en": "UXQB® Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)"
+      },
+      "issuer": "Usability Academy"
+    },
+    {
+      "title": {
+        "de": "Traineeseminar / Grundseminar für Pressearbeit und PR",
+        "en": "Trainee seminar / basic seminar for press office and public relations work"
+      },
+      "issuer": "Journalisten-Zentrum Haus Busch"
+    }
+  ],
+  "projects": [
+    {
+      "id": "freelance",
+      "title": { "de": "Freelance UX & Webdesign", "en": "Freelance UX & Web Design" },
+      "start": "2021",
+      "end": null,
+      "description": {
+        "de": "Entwicklung und Umsetzung nutzerorientierter Websites als freiberuflicher UX- und Webdesigner.",
+        "en": "Development and implementation of user-oriented websites as a freelance UX and web designer."
+      },
+      "links": [
+        { "label": "mathisthomsen.de", "url": "https://mathisthomsen.de" },
+        { "label": "paperlesslife.de", "url": "https://paperlesslife.de" }
+      ]
+    },
+    {
+      "id": "photo-exhibition",
+      "title": {
+        "de": "Fotoausstellung – Institut für Medizingeschichte",
+        "en": "Photo Exhibition – Institute for Medical Humanities"
+      },
+      "start": null,
+      "end": null,
+      "description": {
+        "de": "Fotoausstellung im Rahmen des 200-jährigen Jubiläums der Universität Bonn.",
+        "en": "Photo exhibition at the Institute for Medical Humanities in the context of the 200th anniversary of the University of Bonn."
+      },
+      "links": []
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio — Mathis Thomsen, Senior UX/UI Designer. Projekte aus UX Research, Information Architecture und Interaction Design.">
+  <meta name="robots" content="index, follow">
+
+  <title>Portfolio — Mathis Thomsen</title>
+
+  <!-- Preload critical font -->
+  <link rel="preload" href="/assets/fonts/SpaceGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/portfolio.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+  <!-- Topbar injected by portfolio.js (replaces this placeholder) -->
+  <div id="portfolio-topbar-placeholder" aria-hidden="true"></div>
+
+  <main id="main" class="portfolio-main">
+
+    <div class="container">
+      <header class="portfolio-header" data-reveal>
+        <div class="portfolio-header__inner">
+          <p class="portfolio-header__label">Mathis Thomsen</p>
+          <h1 class="portfolio-header__title">Portfolio</h1>
+          <p class="portfolio-header__sub" id="portfolio-header-sub">
+            Ausgewählte Projekte aus UX Research, Information Architecture und Interaction Design.
+          </p>
+        </div>
+      </header>
+    </div>
+
+    <div class="container">
+      <!-- Project cards rendered by portfolio.js -->
+      <div id="portfolio-overview"></div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Mathis Thomsen</span>
+    <span class="site-footer__sep">·</span>
+    <a href="/impressum.html">Impressum</a>
+    <span class="site-footer__sep">·</span>
+    <a href="/datenschutz.html">Datenschutz</a>
+  </footer>
+
+  <script src="/js/animations.js" type="module"></script>
+  <script src="/js/portfolio.js" type="module"></script>
+</body>
+</html>

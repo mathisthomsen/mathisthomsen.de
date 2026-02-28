@@ -1,0 +1,13 @@
+{
+  "name": "mathisthomsen-de",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal website — digital business card + interactive CV",
+  "scripts": {
+    "start": "node server/export.js",
+    "dev": "node server/export.js"
+  },
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  }
+}

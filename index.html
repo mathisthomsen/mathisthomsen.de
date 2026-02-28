@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mathis Thomsen — Senior UX/UI Designer. UX/UI from first principle to final pixel.">
+  <meta name="robots" content="index, follow">
+
+  <title>Mathis Thomsen — UX/UI Designer</title>
+
+  <!-- Preload critical font -->
+  <link rel="preload" href="/assets/fonts/SpaceGrotesk-Variable.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/card.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Zum Inhalt springen</a>
+
+  <!-- Grid overlay for parallax (populated by JS on desktop) -->
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <main id="main" class="card">
+
+    <header class="card__header">
+      <div class="card__rule" aria-hidden="true"></div>
+
+      <p class="card__label">Portfolio</p>
+
+      <h1 class="card__name" aria-label="Mathis Thomsen">
+        <!-- Characters injected by animations.js for staggered reveal -->
+        <span class="card__name-inner">Mathis Thomsen</span>
+      </h1>
+
+      <p class="card__role">Senior UX/UI Designer</p>
+    </header>
+
+    <div class="card__body">
+      <p class="card__tagline">UX/UI from first principle to final pixel.</p>
+
+      <nav class="card__nav" aria-label="Navigation">
+        <a href="/cv/" class="card__nav-link">
+          <span class="card__nav-link-label">CV ansehen</span>
+          <span class="card__nav-link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="mailto:info@mathisthomsen.de" class="card__nav-link">
+          <span class="card__nav-link-label">Kontakt</span>
+          <span class="card__nav-link-arrow" aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="card__meta" aria-hidden="true">
+      <span class="card__meta-item">Bonn, DE</span>
+      <span class="card__meta-sep">·</span>
+      <span class="card__meta-item">mathisthomsen.de</span>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Mathis Thomsen</span>
+    <span class="site-footer__sep">·</span>
+    <a href="/impressum.html">Impressum</a>
+    <span class="site-footer__sep">·</span>
+    <a href="/datenschutz.html">Datenschutz</a>
+  </footer>
+
+  <script src="/js/animations.js" type="module"></script>
+</body>
+</html>
