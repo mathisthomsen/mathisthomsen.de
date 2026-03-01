@@ -6,7 +6,7 @@
         "de": "Informationsarchitektur für eine kollaborative B2B-Plattform",
         "en": "Information Architecture for a Collaborative B2B Platform"
       },
-      "year": "2023",
+      "year": "2020",
       "duration": { "de": "3 Monate", "en": "3 months" },
       "role": {
         "de": "UX Research · Information Architecture · Facilitation",
@@ -118,7 +118,7 @@
         "de": "Evidoxa — Forschungsdatenmanagement für Geisteswissenschaftler:innen",
         "en": "Evidoxa — Research Data Management for Humanities Scholars"
       },
-      "year": "2024",
+      "year": "2025/2026",
       "duration": { "de": "Laufend", "en": "Ongoing" },
       "role": {
         "de": "Product Design · UX/UI · AI-aided Development · Prototyping",
@@ -646,8 +646,8 @@
               "phase": "03",
               "title": { "de": "Migration zu MUI", "en": "Migration to MUI" },
               "description": {
-                "de": "Die strategische Entscheidung: Entwicklerkapazitäten schonen durch Umstieg auf MUI als technische Basis. Dank der strukturellen Qualität des proprietären Systems verlief die Migration reibungslos – ein minimal customiztes MUI-Theme mit angepasstem Farbschema reichte für einen optisch nahtlosen Go-live. Nutzer und Entwickler merkten kaum einen Unterschied.",
-                "en": "The strategic decision: reduce developer overhead by switching to MUI as the technical foundation. Thanks to the structural quality of the proprietary system, the migration was smooth — a minimally customised MUI theme with an adjusted colour scheme was enough for a visually seamless go-live. Users and developers barely noticed the difference."
+                "de": "Die strategische Entscheidung: Entwicklerkapazitäten schonen durch Umstieg auf MUI als technische Basis. Dank der strukturellen Qualität des proprietären Systems verlief die Migration reibungslos – ein minimal customiztes MUI-Theme mit angepasstem Farbschema reichte für einen optisch nahtlosen Go-live. Nutzer und Stakeholder merkten kaum einen Unterschied.",
+                "en": "The strategic decision: reduce developer overhead by switching to MUI as the technical foundation. Thanks to the structural quality of the proprietary system, the migration was smooth — a minimally customised MUI theme with an adjusted colour scheme was enough for a visually seamless go-live. Users and stakeholders barely noticed the difference."
               }
             },
             {
