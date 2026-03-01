@@ -127,6 +127,20 @@ const ICONS = {
   shield: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
   </svg>`,
+
+  balance: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <line x1="12" y1="3" x2="12" y2="21"/>
+    <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>
+    <path d="M7 21h10"/>
+    <path d="M16 7l3 9c-.87.65-1.92 1-3 1s-2.13-.35-3-1l3-9z"/>
+    <path d="M8 7l-3 9c.87.65 1.92 1 3 1s2.13-.35 3-1L8 7z"/>
+  </svg>`,
+
+  cart: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="9" cy="21" r="1"/>
+    <circle cx="20" cy="21" r="1"/>
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+  </svg>`,
 };
 
 /* ── Block renderers (case study detail) ─────────────────────── */
@@ -156,11 +170,22 @@ function renderTimeline(block) {
 
   const timeline = el('div', 'cs-timeline');
   (block.phases || []).forEach(phase => {
-    const entry = el('div', 'cs-timeline__phase-entry');
+    const isWip = phase.wip === true;
+    const entry = el('div', isWip
+      ? 'cs-timeline__phase-entry cs-timeline__phase-entry--wip'
+      : 'cs-timeline__phase-entry'
+    );
 
+    const rawLabel = t(phase.phase, activeLang);
     const num = el('p', 'cs-timeline__phase-num');
-    num.textContent = `Phase ${phase.phase}`;
+    num.textContent = /^\d+$/.test(rawLabel) ? `Phase ${rawLabel}` : rawLabel;
     entry.appendChild(num);
+
+    if (isWip) {
+      entry.appendChild(el('span', 'cs-timeline__phase-wip-badge',
+        activeLang === 'de' ? 'In Arbeit' : 'In Progress'
+      ));
+    }
 
     entry.appendChild(el('h3', 'cs-timeline__phase-title', t(phase.title, activeLang)));
     entry.appendChild(el('p', 'cs-timeline__phase-desc', t(phase.description, activeLang)));
@@ -343,6 +368,16 @@ function buildCaseStudyHeader(project) {
       ul.appendChild(el('li', 'case-study-header__tag', tag));
     });
     inner.appendChild(ul);
+  }
+
+  // External URL (for non-confidential projects with a live site)
+  if (project.url) {
+    const urlLink = el('a', 'case-study-header__url');
+    urlLink.href = project.url;
+    urlLink.target = '_blank';
+    urlLink.rel = 'noopener noreferrer';
+    urlLink.textContent = project.url.replace(/^https?:\/\//, '') + ' ↗';
+    inner.appendChild(urlLink);
   }
 
   header.appendChild(inner);

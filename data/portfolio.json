@@ -419,5 +419,166 @@
       ],
       "assets": []
     }
+  ,
+    {
+      "slug": "paperless-life",
+      "title": {
+        "de": "Paperless Life — Shopify Store UX, UI & technische Betreuung",
+        "en": "Paperless Life — Shopify Store UX, UI & Technical Management"
+      },
+      "year": "2019–present",
+      "role": "UX/UI Design · Shopify Development · E-Commerce · Conversion",
+      "client": "Paperless Life",
+      "url": "https://paperlesslife.com",
+      "tags": ["UX/UI Design", "Shopify", "E-Commerce", "Conversion"],
+      "confidential": false,
+      "teaser": {
+        "de": "Fünf Jahre E-Commerce – von Etsy zu Shopify, durch zwei Major Relaunches, laufende Optimierung und zwei WIP-Projekte. Kein abgeschlossener Case, sondern ein wachsendes System.",
+        "en": "Five years of e-commerce – from Etsy to Shopify, through two major relaunches, ongoing optimisation and two WIP projects. Not a closed case study, but a growing system."
+      },
+      "sections": [
+        {
+          "type": "stat_bar",
+          "stats": [
+            { "value": "5+",                                         "label": { "de": "Jahre Betreuung",  "en": "Years" } },
+            { "value": "2",                                          "label": { "de": "Major Relaunches", "en": "Major Relaunches" } },
+            { "value": "Storefront 2.0",                            "label": { "de": "Shopify",          "en": "Shopify" } },
+            { "value": { "de": "Laufend", "en": "Ongoing" },        "label": { "de": "Optimierung",      "en": "Optimisation" } }
+          ]
+        },
+        {
+          "type": "text",
+          "content": {
+            "de": "Fünf Jahre sind im E-Commerce eine lange Zeit. Paperless Life startete auf Etsy, wuchs in einen eigenen Shopify Store, durchlief einen kompletten Relaunch auf Storefront 2.0 – und entwickelt sich seitdem kontinuierlich weiter. Was dabei entsteht ist kein abgeschlossenes Projekt, sondern ein lebendiges System: immer balancierend zwischen Informationsdichte und Übersichtlichkeit, zwischen Emotion und Conversion, zwischen dem was heute funktioniert und dem was morgen skaliert.",
+            "en": "Five years is a long time in e-commerce. Paperless Life started on Etsy, grew into its own Shopify store, went through a complete relaunch on Storefront 2.0 — and has been evolving ever since. What emerges is not a finished project but a living system: constantly balancing information density against clarity, emotion against conversion, what works today against what scales tomorrow."
+          }
+        },
+        {
+          "type": "insight",
+          "content": {
+            "de": "„Ein Store der fünf Jahre überlebt und wächst, braucht kein perfektes Design. Er braucht ein System das mit ihm wächst.\"",
+            "en": "\"A store that survives and grows for five years doesn't need perfect design. It needs a system that grows with it.\""
+          }
+        },
+        {
+          "type": "timeline",
+          "phases": [
+            {
+              "phase": "2019/2020",
+              "title": { "de": "Von Etsy zu Shopify", "en": "From Etsy to Shopify" },
+              "description": {
+                "de": "Initialer Launch des eigenen Stores nach dem Etsy-Vertrieb. Aufbau der grundlegenden Store-Architektur, Produktseiten-Struktur und ersten Kollektionsseiten.",
+                "en": "Initial launch of the standalone store following Etsy distribution. Building the foundational store architecture, product page structure and first collection pages."
+              }
+            },
+            {
+              "phase": { "de": "Laufend", "en": "Ongoing" },
+              "title": { "de": "Produktseiten-Optimierung", "en": "Product Page Optimisation" },
+              "description": {
+                "de": "Die Balance zwischen Informationsdichte, Trust-Aufbau, Emotion und Conversion – iterativ verfeinert. Hick's Law als konstantes Designprinzip: jede zusätzliche Option hat ihren Preis.",
+                "en": "The balance between information density, trust-building, emotion and conversion — iteratively refined. Hick's Law as a constant design principle: every additional option comes at a cost."
+              }
+            },
+            {
+              "phase": { "de": "Laufend", "en": "Ongoing" },
+              "title": { "de": "Collection Pages", "en": "Collection Pages" },
+              "description": {
+                "de": "SEO-Inhalte, Tag-basierte Unternavigation, Integration von Metainformationen wie Sale, Coming Soon oder Ausverkauft – Kollektionsseiten als eigenständige UX-Aufgabe.",
+                "en": "SEO content, tag-based sub-navigation, integration of meta-information such as Sale, Coming Soon or Sold Out — collection pages as a UX challenge in their own right."
+              }
+            },
+            {
+              "phase": { "de": "Laufend", "en": "Ongoing" },
+              "title": { "de": "Differenzierung digitaler und physischer Produkte", "en": "Differentiating Digital and Physical Products" },
+              "description": {
+                "de": "Unterschiedliche Nutzererwartungen, unterschiedliche Kaufprozesse – Design und Implementierung differenzierter Seiten- und Produktstrukturen sowie Custom Pages für Sonderinhalte wie Baumprojekte und About-Seiten.",
+                "en": "Different user expectations, different purchase journeys — design and implementation of differentiated page and product structures, plus custom pages for special content like tree-planting projects and About pages."
+              }
+            },
+            {
+              "phase": "Relaunch",
+              "title": { "de": "Storefront 2.0 & neues Theme", "en": "Storefront 2.0 & New Theme" },
+              "description": {
+                "de": "Kompletter Relaunch auf Shopify Storefront 2.0: neues Theme, überarbeitete Architektur, modernisiertes UI.",
+                "en": "Complete relaunch on Shopify Storefront 2.0: new theme, revised architecture, modernised UI."
+              }
+            },
+            {
+              "phase": "WIP",
+              "wip": true,
+              "title": { "de": "Produkt-Customizer", "en": "Product Customiser" },
+              "description": {
+                "de": "Nutzer konfigurieren ihr Produkt Schritt für Schritt, werden visuell geführt, können ihr Ergebnis teilen und direkt bestellen. Die Herausforderungen: Variantendaten jenseits des Shopify-Limits speichern, kognitive Überlastung durch Auswahlvielfalt vermeiden, den richtigen Download-Link nach dem Checkout zum richtigen Kunden bringen.",
+                "en": "Users configure their product step by step, guided visually throughout, able to share their result and order directly. The challenges: storing variant data beyond Shopify's limits, avoiding cognitive overload from the breadth of choices, ensuring the right download link reaches the right customer after checkout."
+              }
+            },
+            {
+              "phase": "WIP",
+              "wip": true,
+              "title": { "de": "Navigationsüberarbeitung", "en": "Navigation Overhaul" },
+              "description": {
+                "de": "Historisch gewachsene, komplexe Navigation – Nutzersignale zeigen Verwirrung. Neuer Ansatz: Differenzierung zwischen produkt- und bedarfsspezifischer Navigation, klares Wording, intuitive Hierarchien, Selbstverortung durch Breadcrumbs.",
+                "en": "A historically grown, complex navigation — user signals show confusion. New approach: differentiating between product-specific and needs-based navigation, clear wording, intuitive hierarchies, self-orientation through breadcrumbs and clear structures."
+              }
+            }
+          ]
+        },
+        {
+          "type": "method_grid",
+          "methods": [
+            {
+              "icon": "balance",
+              "title": { "de": "Balance als Designprinzip", "en": "Balance as Design Principle" },
+              "description": {
+                "de": "Informationsdichte vs. Übersichtlichkeit, Emotion vs. Conversion, Heute vs. Skalierbarkeit – E-Commerce-Design ist permanentes Abwägen.",
+                "en": "Information density vs. clarity, emotion vs. conversion, today vs. scalability — e-commerce design is permanent negotiation."
+              }
+            },
+            {
+              "icon": "layers",
+              "title": { "de": "Systeme statt Seiten", "en": "Systems, Not Pages" },
+              "description": {
+                "de": "Kein einzelnes Feature, sondern eine zusammenhängende Store-Architektur die über Jahre trägt und mit dem Business wächst.",
+                "en": "Not individual features, but a coherent store architecture that holds over years and grows with the business."
+              }
+            },
+            {
+              "icon": "research",
+              "title": { "de": "Nutzersignale als Kompass", "en": "User Signals as Compass" },
+              "description": {
+                "de": "Heatmaps, Analytics und direkte Nutzerfeedbacks steuern Prioritäten – was optimiert wird, zeigen die Daten.",
+                "en": "Heatmaps, analytics and direct user feedback steer priorities — the data shows what gets optimised."
+              }
+            },
+            {
+              "icon": "cart",
+              "title": { "de": "Shopify als Plattform verstehen", "en": "Understanding Shopify as a Platform" },
+              "description": {
+                "de": "Technische Grenzen kennen, kreativ umgehen – vom Variantenlimit bis zur Theme-Architektur.",
+                "en": "Know the technical limits, work around them creatively — from the variant limit to theme architecture."
+              }
+            }
+          ]
+        },
+        {
+          "type": "visual_slots",
+          "slots": [
+            { "id": "product-page",    "caption": { "de": "Produktseite — Struktur und Hierarchie",        "en": "Product page — structure and hierarchy" } },
+            { "id": "collection-page", "caption": { "de": "Collection Page — Navigation und Metainfos",    "en": "Collection page — navigation and meta information" } },
+            { "id": "custom-page",     "caption": { "de": "Custom Page — Baumprojekt oder About",          "en": "Custom page — tree project or About" } },
+            { "id": "customiser-wip",  "caption": { "de": "Customizer WIP — aktueller Entwicklungsstand",  "en": "Customiser WIP — current development state" } },
+            { "id": "nav-concept",     "caption": { "de": "Navigationskonzept WIP",                        "en": "Navigation concept WIP" } }
+          ]
+        },
+        {
+          "type": "text",
+          "content": {
+            "de": "Paperless Life ist seit über fünf Jahren ein laufendes Projekt – kein abgeschlossener Case Study, sondern ein Beweis dafür, dass gutes Design nicht einmalig ist. Es ist ein Prozess. Der Store wächst, die Anforderungen wachsen, und das System wächst mit.",
+            "en": "Paperless Life has been a running project for over five years — not a closed case study, but proof that good design is never a one-time event. It's a process. The store grows, the requirements grow, and the system grows with them."
+          }
+        }
+      ],
+      "assets": []
+    }
   ]
 }
