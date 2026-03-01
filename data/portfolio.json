@@ -580,5 +580,141 @@
       ],
       "assets": []
     }
+  ,
+    {
+      "slug": "design-system-mui-migration",
+      "title": {
+        "de": "Design System – Von proprietär zu MUI",
+        "en": "Design System – From Proprietary to MUI"
+      },
+      "year": "ongoing",
+      "role": "Design Systems · Figma · Component Architecture · Frontend Collaboration",
+      "client": {
+        "de": "Digital-Produkt-Unternehmen (vertraulich)",
+        "en": "Digital Product Company (confidential)"
+      },
+      "tags": ["Design Systems", "Figma", "Component Architecture", "Frontend Collaboration"],
+      "confidential": true,
+      "teaser": {
+        "de": "Ein proprietäres Design System für mehrere Produkte und fünf Entwickler – und eine Migration zu MUI, die Nutzer und Entwickler kaum bemerkten.",
+        "en": "A proprietary design system across multiple products and five developers – and a migration to MUI that users and developers barely noticed."
+      },
+      "sections": [
+        {
+          "type": "stat_bar",
+          "stats": [
+            { "value": "2",  "label": { "de": "Jahre proprietäres System", "en": "Years Proprietary System" } },
+            { "value": "5",  "label": { "de": "Frontend-Entwickler",       "en": "Frontend Developers" } },
+            { "value": "3+", "label": { "de": "Produkte",                  "en": "Products" } },
+            { "value": "1",  "label": { "de": "Designer",                  "en": "Designer" } }
+          ]
+        },
+        {
+          "type": "text",
+          "content": {
+            "de": "Ein wachsendes Digital-Produkt-Unternehmen, mehrere Produkte in Entwicklung, fünf Frontend-Entwickler – und ein einziger Designer. Die Herausforderung war nicht nur konsistente UIs über Marktplatz, SaaS-Produkt und mehrere Backoffice-Anwendungen hinweg zu gewährleisten, sondern das mit minimalen Reibungsverlusten zwischen Design und Entwicklung zu tun. Die Lösung: ein Design System das von Anfang an so gebaut wurde, dass es mit dem Unternehmen wachsen kann.",
+            "en": "A growing digital products company, multiple products in development, five frontend developers — and a single designer. The challenge was not just to ensure consistent UIs across a marketplace, a SaaS product and several backoffice applications, but to do so with minimal friction between design and development. The solution: a design system built from the start to grow with the company."
+          }
+        },
+        {
+          "type": "insight",
+          "content": {
+            "de": "„Ein gutes Design System fällt nicht auf – weder den Nutzern, noch wenn man es migriert.\"",
+            "en": "\"A good design system goes unnoticed — by users, and even when you migrate it.\""
+          }
+        },
+        {
+          "type": "timeline",
+          "phases": [
+            {
+              "phase": "01",
+              "title": { "de": "Aufbau des proprietären Systems", "en": "Building the Proprietary System" },
+              "description": {
+                "de": "Von Null: Komponentenarchitektur, Button-Varianten, Dark- und Light Mode, Formularelemente, Alerts, Modals – konzipiert, designed und in Figma aufgebaut von einer Person. Klare Strukturprinzipien von Anfang an, die später die Migration erst möglich machten.",
+                "en": "From scratch: component architecture, button variants, dark and light mode, form elements, alerts, modals — conceived, designed and built in Figma by one person. Clear structural principles from day one, which later made the migration possible in the first place."
+              }
+            },
+            {
+              "phase": "02",
+              "title": { "de": "Betrieb & Skalierung", "en": "Operation & Scaling" },
+              "description": {
+                "de": "Zwei Jahre produktiver Betrieb mit zwei Frontend-Entwicklern. Das System wuchs mit den Produkten – neue Komponenten, neue Kontexte, kontinuierliche Pflege der Figma-Bibliothek und Entwickler-Dokumentation.",
+                "en": "Two years of productive operation with two frontend developers. The system grew alongside the products — new components, new contexts, continuous maintenance of the Figma library and developer documentation."
+              }
+            },
+            {
+              "phase": "03",
+              "title": { "de": "Migration zu MUI", "en": "Migration to MUI" },
+              "description": {
+                "de": "Die strategische Entscheidung: Entwicklerkapazitäten schonen durch Umstieg auf MUI als technische Basis. Dank der strukturellen Qualität des proprietären Systems verlief die Migration reibungslos – ein minimal customiztes MUI-Theme mit angepasstem Farbschema reichte für einen optisch nahtlosen Go-live. Nutzer und Entwickler merkten kaum einen Unterschied.",
+                "en": "The strategic decision: reduce developer overhead by switching to MUI as the technical foundation. Thanks to the structural quality of the proprietary system, the migration was smooth — a minimally customised MUI theme with an adjusted colour scheme was enough for a visually seamless go-live. Users and developers barely noticed the difference."
+              }
+            },
+            {
+              "phase": "04",
+              "title": { "de": "Parallelbetrieb & laufender Betrieb", "en": "Parallel Operation & Ongoing Management" },
+              "description": {
+                "de": "Heute laufen beide Systeme parallel – MUI für neue Kontexte, das proprietäre System dort wo eine Migration business-seitig niedrig priorisiert ist. Fünf Entwickler, drei Produkte, ein Designer.",
+                "en": "Today both systems run in parallel — MUI for new contexts, the proprietary system where migration has been deprioritised from a business perspective. Five developers, three products, one designer."
+              }
+            }
+          ]
+        },
+        {
+          "type": "method_grid",
+          "methods": [
+            {
+              "icon": "grid",
+              "title": { "de": "Component Architecture", "en": "Component Architecture" },
+              "description": {
+                "de": "Klare, konsistente Komponentenstruktur als Fundament – nicht als Nachgedanke. Varianten, States, Dark/Light Mode von Anfang an mitgedacht.",
+                "en": "A clear, consistent component structure as foundation — not an afterthought. Variants, states, dark and light mode considered from the beginning."
+              }
+            },
+            {
+              "icon": "refresh",
+              "title": { "de": "Migrationsplanung", "en": "Migration Planning" },
+              "description": {
+                "de": "Eine Migration ist kein Neustart. Wer sein bestehendes System gut kennt, kann Äquivalenzen zu externen Systemen präzise mappen – und Risiken minimieren.",
+                "en": "A migration is not a restart. Knowing your existing system well means you can map equivalences to external systems precisely — and minimise risk."
+              }
+            },
+            {
+              "icon": "users",
+              "title": { "de": "Design-Developer Collaboration", "en": "Design-Developer Collaboration" },
+              "description": {
+                "de": "Ein Design System ist ein Kommunikationswerkzeug. Tokens, Dokumentation und Figma-Struktur so gestalten, dass Entwickler eigenständig und korrekt damit arbeiten können.",
+                "en": "A design system is a communication tool. Tokens, documentation and Figma structure designed so developers can work with it independently and correctly."
+              }
+            },
+            {
+              "icon": "layers",
+              "title": { "de": "Systemdenken über Produktgrenzen", "en": "Systems Thinking Across Product Boundaries" },
+              "description": {
+                "de": "Marktplatz, SaaS, Backoffice – unterschiedliche Kontexte, ein zusammenhängendes System. Konsistenz als strategische Entscheidung, nicht als ästhetische Präferenz.",
+                "en": "Marketplace, SaaS, backoffice — different contexts, one coherent system. Consistency as a strategic decision, not an aesthetic preference."
+              }
+            }
+          ]
+        },
+        {
+          "type": "visual_slots",
+          "slots": [
+            { "id": "figma-overview",    "caption": { "de": "Figma Komponentenbibliothek – Übersicht",          "en": "Figma component library — overview" } },
+            { "id": "component-detail",  "caption": { "de": "Komponenten-Detail — z.B. Button-Varianten",        "en": "Component detail — e.g. button variants" } },
+            { "id": "dark-light-mode",   "caption": { "de": "Dark/Light Mode Gegenüberstellung",                 "en": "Dark / light mode comparison" } },
+            { "id": "product-interface", "caption": { "de": "Anwendung im Produkt-Interface",                    "en": "System applied in a product interface" } }
+          ]
+        },
+        {
+          "type": "text",
+          "content": {
+            "de": "Das System läuft seit Jahren produktiv – über mehrere Produkte, durch eine technische Migration und mit wachsendem Entwicklerteam. Dass der Umstieg auf MUI optisch kaum auffiel, war kein Zufall: Es war das Ergebnis einer Systemarchitektur, die von Anfang an auf Klarheit, Konsistenz und Übertragbarkeit ausgelegt war.",
+            "en": "The system has been running in production for years — across multiple products, through a technical migration and with a growing development team. That the switch to MUI went visually unnoticed was no coincidence: it was the result of a system architecture designed from the start for clarity, consistency and portability."
+          }
+        }
+      ],
+      "assets": []
+    }
   ]
 }
