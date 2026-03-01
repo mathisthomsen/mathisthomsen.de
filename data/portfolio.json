@@ -289,5 +289,135 @@
       ],
       "assets": []
     }
+  ,
+    {
+      "slug": "sales-lander-optimierung",
+      "title": {
+        "de": "Conversion Rate Optimierung für internationale Sales Lander",
+        "en": "Conversion Rate Optimisation for International Sales Landing Pages"
+      },
+      "year": "2022",
+      "role": {
+        "de": "UX Design · Conversion Optimierung · A/B Testing · Analytics",
+        "en": "UX Design · Conversion Optimisation · A/B Testing · Analytics"
+      },
+      "client": {
+        "de": "B2C-Unternehmen (vertraulich)",
+        "en": "B2C Business (confidential)"
+      },
+      "tags": ["UX Design", "Conversion Optimisation", "A/B Testing", "Analytics"],
+      "confidential": true,
+      "teaser": {
+        "de": "Eine Bounce Rate von ~90%, eine Conversion Rate unter 1% – und ein datengetriebener Redesign-Prozess, der beides fundamental veränderte. Für ein internationales B2C-Unternehmen.",
+        "en": "A bounce rate of ~90%, a conversion rate below 1% – and a data-driven redesign process that fundamentally changed both. For an international B2C business."
+      },
+      "sections": [
+        {
+          "type": "stat_bar",
+          "stats": [
+            { "value": "~90%", "label": { "de": "Bounce Rate (Ausgangslage)", "en": "Bounce Rate (baseline)" } },
+            { "value": "150%", "label": { "de": "CR-Steigerung",              "en": "CR increase" } },
+            { "value": "+20%", "label": { "de": "CTR",                        "en": "CTR" } },
+            { "value": "+8%",  "label": { "de": "Gross Revenue",              "en": "Gross Revenue" } }
+          ]
+        },
+        {
+          "type": "text",
+          "content": {
+            "de": "Ein internationales B2C-Unternehmen mit hohem Traffic-Volumen verschenkte massiv Potenzial: Bounce Rates um die 90%, eine Conversion Rate unter 1% und Nutzerdaten die zeigten, dass Besucher desorientiert und verwirrt die Seite verließen. Die Aufgabe war klar – aber die Lösung musste mehr leisten als kosmetische Korrekturen.",
+            "en": "An international B2C business with high traffic volume was leaving enormous potential on the table: bounce rates around 90%, a conversion rate below 1%, and user data showing visitors leaving the page disoriented and confused. The task was clear — but the solution needed to go beyond cosmetic fixes."
+          }
+        },
+        {
+          "type": "insight",
+          "content": {
+            "de": "„Das Problem war kein schlechtes Produkt. Das Problem war eine Seite, die dem mentalen Modell ihrer Nutzer fundamental widersprach.\"",
+            "en": "\"The problem wasn't a bad product. The problem was a page that fundamentally contradicted the mental models of its users.\""
+          }
+        },
+        {
+          "type": "timeline",
+          "phases": [
+            {
+              "phase": "01",
+              "title": { "de": "Diagnose", "en": "Diagnosis" },
+              "description": {
+                "de": "Systematische Auswertung von Google Analytics, Hotjar-Heatmaps und internen Controlling-Daten. Wo verlassen Nutzer die Seite? Was übersehen sie? Was verwirrt sie? Aus den Daten entstand ein klares Bild der Schwachstellen.",
+                "en": "Systematic analysis of Google Analytics, Hotjar heatmaps and internal controlling data. Where do users leave? What do they miss? What confuses them? A clear picture of the page's weaknesses emerged from the data."
+              }
+            },
+            {
+              "phase": "02",
+              "title": { "de": "Redesign & Wireframing", "en": "Redesign & Wireframing" },
+              "description": {
+                "de": "Auf Basis der Analyse entstanden Wireframes einer neu durchdachten Informationsarchitektur: Positionierung und Gewichtung der H1, Struktur der Vorteilsargumentation, Hervorhebung von Benefits und USPs, Platzierung und Gestaltung der CTAs, neues Farbschema das Markenfarben modern positioniert und den Blick aktiv leitet. Das UX-Ziel: Choice Paralysis reduzieren, Vertrauen aufbauen, Emotion wecken – ohne Dark Patterns.",
+                "en": "Based on the analysis, wireframes for a rethought information architecture were developed: positioning and weight of the H1, structure of the value proposition, emphasis on benefits and USPs, placement and design of CTAs, a new colour scheme that modernises the brand colours and actively guides the eye. The UX goal: reduce choice paralysis, build trust, evoke emotion — without dark patterns."
+              }
+            },
+            {
+              "phase": "03",
+              "title": { "de": "Stakeholder-Abstimmung & Handoff", "en": "Stakeholder Alignment & Handoff" },
+              "description": {
+                "de": "Iterative Abstimmungsrunden mit den Stakeholdern, anschließend pixelgenaues Handoff an die Entwickler: alle relevanten Viewports, Dark- und Light Mode, sämtliche Produktvarianten.",
+                "en": "Iterative alignment rounds with stakeholders, followed by pixel-precise handoff to developers: all relevant viewports, dark and light mode, all product variants."
+              }
+            },
+            {
+              "phase": "04",
+              "title": { "de": "Testing, Messung & Iteration", "en": "Testing, Measurement & Iteration" },
+              "description": {
+                "de": "Erstausrollung in einem lokalen Markt mit geteiltem Traffic. Nach überzeugenden Ergebnissen breiter Rollout – begleitet von einer systematischen A/B-Test-Serie mit Verify.io: CTA-Farbe, Tone of Voice der Benefits, Position des Language Switch, Einführung eines direkten Sales-Kontakts. Für jeden Test eine Hypothese, statistische Auswertung nach Abschluss, Empfehlung an das Management bei signifikantem p-Wert.",
+                "en": "Initial rollout in a local market with split traffic. After convincing results, broader rollout — accompanied by a systematic A/B test series using Verify.io: CTA colour, tone of voice for benefits, position of the language switch, introduction of direct sales contact. A hypothesis for every test, statistical evaluation at completion, recommendation to management when the p-value was significant."
+              }
+            }
+          ]
+        },
+        {
+          "type": "method_grid",
+          "methods": [
+            {
+              "icon": "chart",
+              "title": { "de": "Datengetriebene Diagnose", "en": "Data-driven Diagnosis" },
+              "description": {
+                "de": "Analytics, Heatmaps und Controlling als Grundlage – keine Designentscheidung ohne empirische Basis.",
+                "en": "Analytics, heatmaps and controlling as foundation — no design decision without empirical basis."
+              }
+            },
+            {
+              "icon": "eye",
+              "title": { "de": "Mentale Modelle als Designprinzip", "en": "Mental Models as Design Principle" },
+              "description": {
+                "de": "Nutzer kommen mit Erwartungen. Die Seite muss diesen Erwartungen begegnen, nicht gegen sie arbeiten.",
+                "en": "Users arrive with expectations. The page must meet those expectations, not work against them."
+              }
+            },
+            {
+              "icon": "split",
+              "title": { "de": "Hypothesenbasiertes A/B Testing", "en": "Hypothesis-based A/B Testing" },
+              "description": {
+                "de": "Keine Tests ins Blaue – jede Testvariante folgt einer formulierten Hypothese, jedes Ergebnis wird statistisch bewertet.",
+                "en": "No testing in the dark — every variant follows a formulated hypothesis, every result is statistically evaluated."
+              }
+            },
+            {
+              "icon": "shield",
+              "title": { "de": "Überzeugen ohne Dark Patterns", "en": "Persuasion Without Dark Patterns" },
+              "description": {
+                "de": "Conversion-Optimierung die auf Vertrauen und Klarheit setzt, nicht auf Manipulation – weil das langfristig der einzige skalierbare Ansatz ist.",
+                "en": "Conversion optimisation built on trust and clarity, not manipulation — because that's the only approach that scales long-term."
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "content": {
+            "de": "Die Bounce Rate sank signifikant, die Click-Through-Rate stieg um bis zu 20%, die Conversion Rate wuchs von 0,8% auf 2% – eine Steigerung von 150%. Der Gross Revenue legte um 8% zu. Die anschließende A/B-Test-Serie verbesserte einzelne Aspekte weiter und etablierte eine Kultur datenbasierter Designentscheidungen im Team.",
+            "en": "The bounce rate dropped significantly, click-through rate increased by up to 20%, conversion rate grew from 0.8% to 2% — a 150% increase. Gross revenue rose by 8%. The subsequent A/B test series further improved individual aspects and established a culture of data-driven design decisions within the team."
+          }
+        }
+      ],
+      "assets": []
+    }
   ]
 }
